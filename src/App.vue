@@ -1,4 +1,31 @@
-<script setup>
+<script>
+import AppBanner from './components/AppBanner.vue';
+
+export default {
+  components: {
+    AppBanner
+  },
+  data() {
+    return {
+      title: "My title"
+    }
+  }
+}
+</script>
+
+<template>
+  <h1>Hello Vue with Vite {{ title }}</h1>
+  <AppBanner></AppBanner>
+</template>
+
+<style>
+h1 {
+  color: red;
+}
+</style>
+
+
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -27,4 +54,4 @@ import HelloWorld from './components/HelloWorld.vue'
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
-</style>
+</style> -->
