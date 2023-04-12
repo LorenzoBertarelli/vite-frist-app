@@ -3,7 +3,7 @@ export default {
   name: "AppBanner",
   data() {
     return {
-      text: "lorem ipsum dolor ssssssssssssssssssssssssssssssssssssssssss"
+      title: "Benvenuti a CVT"
     }
   },
   methods: {
@@ -13,12 +13,17 @@ export default {
 </script>
 
 <template>
-  <h2>Banner</h2>
-  <p>{{ text }}</p>
+  <h2> {{ title }} </h2>
+  <img class="img-logo" src="../assets/vue.svg" alt="">
 </template>
 
 <style>
-h1 {
-  color: red;
+.img-logo {
+    height: 100px;
+    width: 120px;
+}
+
+h2 {
+  color: rgb(17, 0, 255);
 }
 </style>
